@@ -1,4 +1,4 @@
-# This is whre you can start you python file for your week1 web app
+# Week 1 mid-week Triangle Web App built off original template
 # Name: Christopher Van Schyndel
 
 import flask, flask.views
