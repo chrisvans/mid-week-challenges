@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Mc Bagels</title>
+    </head>
+    <body>
+        <p>This app will calculate whether the given three sides could form
+        a triangle.</p>
+    	<p>Enter each side of the triangle to compute:</p>
+    	<form action="/" method="post">
+    		<input type="text" name="expressionA" />
+            <input type="text" name="expressionB" />
+            <input type="text" name="expressionC" />
+            <input type="submit" value="Input Sides" />
+        </form>
+    	{% with messages = get_flashed_messages() %}
+    	    {% if messages %}
+                Results:
+                <pre>
+                	{% for message in messages %}
+{{message}}
+                    {% endfor %}
+                </pre>
+            {% endif %}
+        {% endwith %}
+    </body>
+</html>
