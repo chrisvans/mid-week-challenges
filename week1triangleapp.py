@@ -28,9 +28,7 @@ class View(flask.views.MethodView):
 	
 	def post(self):
 		result = 'With the sides given: '
-		result += str((flask.request.form['expressionA'])) + ', '
-		result += str((flask.request.form['expressionB'])) + ', and '
-		result += str((flask.request.form['expressionC'])) + '. '
+		result += str((flask.request.form['expressionA'])) + ', ' + str((flask.request.form['expressionB'])) + ', and ' + str((flask.request.form['expressionC'])) + '. '
 		a = str((flask.request.form['expressionA']))
 		b = str((flask.request.form['expressionB']))
 		c = str((flask.request.form['expressionC']))
